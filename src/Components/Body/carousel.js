@@ -1,34 +1,24 @@
 import React from "react";
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBCol, MDBRow } from "mdbreact";
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer } from "mdbreact";
 
-const carousel = () => {
+const ThumbnailsCarouselPage = () => {
   return (
-    <MDBContainer className=" mt-4">
-      <MDBRow>
-        <MDBCol md="12">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
-            <MDBCarouselInner>
-              <MDBCarouselItem itemId="1">
-                <video className="video-fluid d-block" autoPlay loop>
-                  <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
-                </video>
-              </MDBCarouselItem>
-              <MDBCarouselItem itemId="2">
-                <video className="video-fluid d-block" autoPlay loop>
-                  <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
-                </video>
-              </MDBCarouselItem>
-              <MDBCarouselItem itemId="3">
-                <video className="video-fluid d-block" autoPlay loop>
-                  <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
-                </video>
-              </MDBCarouselItem>
-            </MDBCarouselInner>
-          </MDBCarousel>
-        </MDBCol>
-      </MDBRow>
+    <MDBContainer>
+      <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} thumbnails className="z-depth-1">
+        <MDBCarouselInner>
+          <MDBCarouselItem itemId="1">
+            <img className="d-block w-100" src="./slide1.jpg" alt="First slide" />
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="2">
+            <img className="d-block w-100" src="./slide2.jpg" alt="Second slide" />
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="3">
+            <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg" alt="Third slide" />
+          </MDBCarouselItem>
+        </MDBCarouselInner>
+      </MDBCarousel>
     </MDBContainer>
   );
 }
 
-export default carousel;
+export default ThumbnailsCarouselPage;
