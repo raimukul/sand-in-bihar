@@ -11,7 +11,7 @@ function Index() {
             <Header />
             <Carousel />
             <Vision />
-            {/* <Recomendation /> */}
+            <Recomendation />
             <Footer />
         </div>
     )

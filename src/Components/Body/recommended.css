@@ -1,0 +1,11 @@
+.recommend{
+    background-color: #890596!important;
+}
+a:hover {
+    color: #000000!important;
+    text-decoration: none!important;
+  }
+  .jumbotron {
+    border-radius: 1.0rem!important;
+    margin-bottom: 0rem!important;
+  }
