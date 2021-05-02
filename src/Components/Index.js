@@ -3,6 +3,7 @@ import Header from './Header/header'
 import Footer from './Footer/footer'
 import Carousel from './Body/carousel'
 import Vision from './Body/vision'
+import Recomendation from './Body/recomended'
 
 function Index() {
     return (
@@ -10,6 +11,7 @@ function Index() {
             <Header />
             <Carousel />
             <Vision />
+            {/* <Recomendation /> */}
             <Footer />
         </div>
     )
