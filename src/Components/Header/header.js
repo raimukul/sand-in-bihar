@@ -17,11 +17,11 @@ import { Link as RouterLink } from "react-router-dom";
 const headersData = [
   {
     label: "Sign Up",
-    href: "/",
+    href: "/signup",
   },
   {
     label: "Login",
-    href: "/",
+    href: "/login",
   },
   {
     label: "Seller",
